@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
+        drawer: deviceType == DeviceType.mobile ? const NavigationBars() : null,
         appBar: AppBar(
           title: Row(
             mainAxisAlignment: deviceType == DeviceType.mobile
@@ -40,19 +41,18 @@ class HomeScreen extends StatelessWidget {
                   ]),
           ],
         ),
-        drawer: deviceType == DeviceType.mobile ? const NavigationBars() : null,
-        body: const SingleChildScrollView(
+        body: SingleChildScrollView(
           child: ResponsiveBuilder(
             mobile: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 40),
-                CourseDetails(),
-                SizedBox(height: 40),
-                CallToAction(),
+                const SizedBox(height: 40),
+                const CourseDetails(),
+                const SizedBox(height: 40),
+                SizedBox(width: size.width * 0.8, child: const CallToAction()),
               ],
             ),
-            tablet: Padding(
+            tablet: const Padding(
               padding: EdgeInsets.all(40.0),
               child: Column(
                 children: [
@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            desktop: Padding(
+            desktop: const Padding(
               padding: EdgeInsets.all(40.0),
               child: Column(
                 children: [
