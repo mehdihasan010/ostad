@@ -11,7 +11,7 @@ class CallToAction extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
         backgroundColor: const Color.fromARGB(255, 31, 229, 146), // Text color
-        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+        //padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
