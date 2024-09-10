@@ -19,7 +19,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppColor.primaryColor,
       appBar: AppBar(
-        //toolbarHeight: 100,
         backgroundColor: AppColor.primaryColor,
         title: const Text(
           "My Bag",
@@ -139,12 +138,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             );
-            /*CardWidget(
-              name: shirtItem[index].name,
-              color: shirtItem[index].color,
-              size: shirtItem[index].size,
-              quantity: shirtItem[index].quantity,
-              price: shirtItem[index].price);*/
           }),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(20),
