@@ -21,11 +21,11 @@ class _UpdateProductState extends State<UpdateProduct> {
   late final TextEditingController _productCodeController =
       TextEditingController(text: widget.product.productCode);
   late final TextEditingController _productPriceController =
-      TextEditingController(text: widget.product.unitPrice.toString());
+      TextEditingController(text: widget.product.unitPrice);
   late final TextEditingController _productQuantityController =
-      TextEditingController(text: widget.product.qty.toString());
+      TextEditingController(text: widget.product.qty);
   late final TextEditingController _totalPriceController =
-      TextEditingController(text: widget.product.totalPrice.toString());
+      TextEditingController(text: widget.product.totalPrice);
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
