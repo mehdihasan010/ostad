@@ -1,17 +1,19 @@
-import 'package:responsive_design/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/product_list_screen.dart';
 
-class ResponsiveApp extends StatelessWidget {
-  const ResponsiveApp({super.key});
+class ProductListApp extends StatefulWidget {
+  const ProductListApp({super.key});
 
   @override
+  State<ProductListApp> createState() => _ProductListAppState();
+}
+
+class _ProductListAppState extends State<ProductListApp> {
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
-      title: 'Flutter Demo',
-      home: const HomeScreen(),
+      home:ProductListScreen()
     );
   }
 }
